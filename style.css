@@ -146,3 +146,65 @@ p {
     padding-top: 5%;
     text-align: center;
 }
+
+#main-footer {
+    position: fixed;
+    background-color: #FAEDCD;
+    color: #244596;
+    width: 100%;
+    text-align: center;
+    padding: 0.5px;
+    display: flex;
+    font-weight: bold;
+    bottom: 0;
+    flex-direction: column;
+   }
+
+#main-footer a {
+    text-decoration: none;
+  }
+
+@media(max-width: 650px) {
+
+    .nav-links ul li{
+      text-decoration: none;
+      padding: 0.5rem 0.5rem;
+      color: #976649;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links ul li{
+      display: flex; 
+      list-style: none;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  
+    .logo {
+      position: absolute;
+      left: 50%;
+      margin-left: -100px !important;
+      margin-top: -15px !important;
+      display: block;
+      padding-top: 30px !important;
+    }
+  
+    .h1 {
+        font-size: 1px;
+    }
+
+    .monitor {
+        width: 30%;
+    }
+
+    .blacksection {
+    position: relative;
+    top: 400px;
+    }
+
+
+}
