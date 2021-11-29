@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----Nav bar med links man kan klikke videre på------*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between ;
+    align-items: center ;
+    background-color: #faedcd;
+}
+nav img{
+    width: 203px;
+    height: 65px;
+}
+.nav-links {
+    flex: 1;
+    text-align:right; 
+}   
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px ;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: o,1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*----styling af text-box herunder textstørrelserne, farve osv----*/
+.text-box{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: black;
+    line-height: 1.6;
+}
+
+.text-box h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+.text-box p{
+
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #dd614a;
+}
+
+   /*----stlying af tap for at trykke videre for at downloade---*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #faedcd;
+    padding: 12px 34px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    background-color: #faedcd;
+    border-radius: 25px;
+
+}
+
+/*---Farve til "download boksen"---*/
+
+.hero-btn:hover{
+    border: 1px solid #f1e1b6;
+    background: #f1e1b6;
+    transition: 1s;
+}
+
+
+section{
+    background-color:#faedcd;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    color:white !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blacksection {
+    background-color: black;
+    height: 80px;
+    justify-content: center;
+    position: relative;
+    padding: 50px;
+    margin: 0%;  
+    text-align: center;
+}
+
+.blacksectiontext {
+    padding-bottom: 10%;
+}
+
+.blacksection {
+    justify-content: space-evenly;
+    padding-top: 5%;
+    text-align: center;
+}
