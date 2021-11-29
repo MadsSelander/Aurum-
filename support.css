@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----Nav bar med links man kan klikke videre på------*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between ;
+    align-items: center ;
+    background-color: #faedcd;
+}
+nav img{
+    width: 203px;
+    height: 65px;
+}
+.nav-links {
+    flex: 1;
+    text-align:right; 
+}   
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px ;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: o,1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 40%;
+    left: 49%;
+    transform:translate(-50%,-50%) ;
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+.wrapper{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 550px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.wrapper .input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+body{
+    background-color: #dd614a;
+}
+
+section{
+    background-color:#faedcd;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+.søgefelt{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+.eksempel{
+    height: 120px;
+    width: 300px;
+}
+
+
+.footer{
+    height: 120px;
+    width: 300px;
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
